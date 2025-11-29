@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-cloud-sun"></i> Weather Dashboard</h1>
+        </header>
+
+        <div class="search-wrapper">
+            <div class="search-container glass">
+                <input type="text" id="city-input" placeholder="Enter city name (e.g., London)" autocomplete="off">
+                <button id="search-btn"><i class="fa-solid fa-search"></i></button>
+                <button id="location-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+            </div>
+            <div id="suggestions-container" class="suggestions-container hidden"></div>
+        </div>
+
+        <div id="error-message" class="error-message hidden"></div>
+        <div id="loading" class="loading hidden"><i class="fa-solid fa-spinner fa-spin"></i> Loading...</div>
+
+        <div id="weather-data" class="weather-data hidden">
+            <!-- Current Weather -->
+            <div class="current-weather glass">
+                <div class="weather-header">
+                    <h2 id="city-name">City Name</h2>
+                    <p id="current-date">Date</p>
+                </div>
+                <div class="weather-body">
+                    <div class="weather-icon-container">
+                        <i id="weather-icon" class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="weather-info">
+                        <p class="temperature"><span id="temp">--</span>°C</p>
+                        <p class="condition" id="condition">Condition</p>
+                    </div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <i class="fa-solid fa-temperature-half"></i>
+                            <div>
+                                <p>Feels Like</p>
+                                <p><span id="feels-like">--</span>°C</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-wind"></i>
+                            <div>
+                                <p>Wind</p>
+                                <p><span id="wind-speed">--</span> km/h</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-droplet"></i>
+                            <div>
+                                <p>Humidity</p>
+                                <p><span id="humidity">--</span>%</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-sunrise"></i>
+                            <div>
+                                <p>Sunrise</p>
+                                <p><span id="sunrise">--</span></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fa-solid fa-sunset"></i>
+                            <div>
+                                <p>Sunset</p>
+                                <p><span id="sunset">--</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-Day Forecast -->
+            <div class="forecast-section">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast cards will be injected here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
