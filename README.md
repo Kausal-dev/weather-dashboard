@@ -3,9 +3,8 @@
 A professional weather dashboard built with HTML, CSS, and Vanilla JavaScript using the Open-Meteo API. Features a premium glassmorphism UI with vibrant weather icons and smooth animations.
 
 ## 🚀 Usage
-1. Clone the repository.
-2. Open `index.html` in your web browser.
-3. Allow location access for automatic weather detection or search for a city manually.
+https://kausal-dev.github.io/weather-dashboard/
+ Allow location access for automatic weather detection or search for a city manually.
 
 ## 🛠️ Features
 
