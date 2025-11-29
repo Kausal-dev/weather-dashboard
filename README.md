@@ -4,7 +4,7 @@ A professional weather dashboard built with HTML, CSS, and Vanilla JavaScript us
 
 ## 🚀 Usage
 https://kausal-dev.github.io/weather-dashboard/
- Allow location access for automatic weather detection or search for a city manually.
+Allow location access for automatic weather detection or search for a city manually.
 
 ## 🛠️ Features
 
