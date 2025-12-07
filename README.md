@@ -3,7 +3,7 @@
 A professional weather dashboard built with HTML, CSS, and Vanilla JavaScript using the Open-Meteo API. Features a premium glassmorphism UI with vibrant weather icons and smooth animations.
 
 ## 🚀 Usage
-https://kausal-dev.github.io/weather-dashboard/
+https://kausaldev.me/weather-dashboard/
 
 ## 🛠️ Features
 
